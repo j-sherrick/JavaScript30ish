@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Simple Synth</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="icon" href="assets/images/music-notes.ico" >
+  <link rel="preload" as="image" type="image/svg+xml" href="assets/images/music-notes.svg" >
+</head>
+<body>
+
+  <div class="keyboard">
+
+    <div class="keyboard-topbar">
+      <img class="notes" src="assets/images/music-notes.svg" alt="two neon blue music notes">
+      <span class="name">simple synth</span>
+    </div>
+
+    <div class="keyboard-content">
+
+      
+
+      <div class="keys">
+        <div data-key="a" data-note="C" class="key">
+          <kbd>A</kbd>
+          <span class="sound">c</span>
+        </div>
+
+        <div data-key="w" data-note="C#" class="key">
+          <kbd>W</kbd>
+          <span class="sound">c#</span>
+        </div>
+
+        <div data-key="s" data-note="D" class="key">
+          <kbd>S</kbd>
+          <span class="sound">d</span>
+        </div>
+
+        <div data-key="e" data-note="D#" class="key">
+          <kbd>E</kbd>
+          <span class="sound">d#</span>
+        </div>
+
+        <div data-key="d" data-note="E" class="key">
+          <kbd>D</kbd>
+          <span class="sound">e</span>
+        </div>
+
+        <div data-key="f" data-note="F" class="key">
+          <kbd>F</kbd>
+          <span class="sound">f</span>
+        </div>
+
+        <div data-key="t" data-note="F#" class="key">
+          <kbd>T</kbd>
+          <span class="sound">f#</span>
+        </div>
+
+        <div data-key="g" data-note="G" class="key">
+          <kbd>G</kbd>
+          <span class="sound">g</span>
+        </div>
+
+        <div data-key="y" data-note="G#" class="key">
+          <kbd>Y</kbd>
+          <span class="sound">g#</span>
+        </div>
+
+        <div data-key="h" data-note="A" class="key">
+          <kbd>H</kbd>
+          <span class="sound">a</span>
+        </div>
+        
+        <div data-key="u" data-note="A#" class="key">
+          <kbd>U</kbd>
+          <span class="sound">a#</span>
+        </div>
+
+        <div data-key="j" data-note="B" class="key">
+          <kbd>J</kbd>
+          <span class="sound">b</span>
+        </div>
+
+      </div>
+
+      <div class="gain">
+        <span>Volume: </span>
+        <input
+          type="range"
+          min="0.0"
+          max="1.0"
+          step="0.01"
+          value="0.5"
+          list="volumes"
+          name="volume" />
+        <datalist id="volumes">
+          <option value="0.0" label="Mute"></option>
+          <option value="1.0" label="100%"></option>
+        </datalist>
+      </div>
+    </div>
+
+    </div>
+
+<script src="assets/js/synth.js"></script>
+
+</body>
+</html>

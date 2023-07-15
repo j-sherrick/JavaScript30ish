@@ -1,0 +1,123 @@
+:root {
+  --kb-page-bg: rgb(18, 18, 18);
+  --kb-keyboard-bg: rgb(34, 34, 34);
+  --kb-keys-fill: rgb(26, 26, 26);
+  --kb-key-hover: rgb(32, 42, 47);
+  --kb-key-active: rgb(244, 3, 169);
+  --kb-neonblue: rgb(3, 169, 244);
+}
+
+html {
+  font-size: 10px;
+  background-color: var(--kb-page-bg);
+  box-sizing: border-box;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--kb-keyboard-bg);
+  padding: 0 1.5rem 2rem 1.5rem;
+  color: var(--kb-neonblue);
+  text-transform: uppercase;
+}
+
+.keyboard-topbar {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.notes  {
+  height: 2rem;
+  margin-right: 0.7rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 550;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--kb-keys-fill);
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+
+
+.key {
+  border: .2rem solid var(--kb-neonblue);
+  border-radius: .5rem;
+  margin-right: 0.85rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transition: all .07s ease;
+  width: 7rem;
+  height: 12rem;
+  text-align: center;
+  background: var(--kb-keys-fill);
+  text-shadow: 0 0 .5rem black;
+}
+
+.key:last-child {
+  margin-right: 0;
+}
+
+.key:hover {
+  background-color: var(--kb-key-hover);
+}
+
+.key:active,
+.active {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.9rem var(--kb-neonblue);
+  background-color: var(--kb-key-active);
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.gain {
+  display: flex;
+  align-items: center;
+}
+
+.gain > span {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+input[type="range"] {
+  width: 20rem;
+  color: var(--kb-neonblue);
+}
