@@ -1,10 +1,11 @@
 {
-  "name": "grandfather-clock",
+  "name": "ornate-clock",
   "version": "1.0.0",
   "description": "A simple express server setup for testing an SVG animated grandfather clock.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "nodemon index.js"
   },
   "author": "Jason Sherrick",
   "license": "ISC",
