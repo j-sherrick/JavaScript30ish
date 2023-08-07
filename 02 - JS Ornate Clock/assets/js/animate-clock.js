@@ -28,3 +28,4 @@ window.onload = () => {
 
 // TODO: Make a Clock class with methods to update hand position
 // TODO: Inline javascript animation so clock runs with 'file://' protocol, i.e. without a server
+// TODO: Fix bug where second hand spins in a full circle when it gets back to 12.
